@@ -10,5 +10,5 @@ import java.util.List;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> findAllByUser(User user);
-    List<Book> findAllByAuthorOrName(String info);
+    List<Book> findAllByAuthorOrName(String info, String info1);
 }

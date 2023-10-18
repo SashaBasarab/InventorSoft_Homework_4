@@ -48,6 +48,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<Book> getAllBySomeInfo(String info) {
-        return bookRepository.findAllByAuthorOrName(info);
+        return bookRepository.findAllByAuthorOrName(info, info);
     }
 }
